@@ -8,11 +8,42 @@ export function Contact() {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thanks for reaching out! This is a demo form.");
+    setIsSubmitting(true);
+    setStatus("idle");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "ca7842bf-e5e5-4dc8-b5b4-2b94e2b23f22", // IMPORTANT: Replace this with your Web3Forms access key
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -59,7 +90,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1">Email</h4>
-                  <p className="text-muted-foreground">hello@example.com</p>
+                  <p className="text-muted-foreground">ravishkaprasajan2000@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -72,7 +103,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">077 818 9106</p>
                 </div>
               </motion.div>
 
@@ -85,7 +116,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1">Location</h4>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Veyangoda, Gampaha, Sri Lanka</p>
                 </div>
               </motion.div>
             </div>
@@ -140,12 +171,19 @@ export function Contact() {
 
             <motion.button
               type="submit"
+              disabled={isSubmitting}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-xl hover:shadow-2xl hover:shadow-primary/40 transition-all"
+              className="w-full px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-xl hover:shadow-2xl hover:shadow-primary/40 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              Send Message
+              {isSubmitting ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
             </motion.button>
+            {status === "success" && (
+              <p className="text-green-500 text-center mt-2">Your message has been sent successfully!</p>
+            )}
+            {status === "error" && (
+              <p className="text-red-500 text-center mt-2">Something went wrong. Please try again later.</p>
+            )}
           </motion.form>
         </div>
       </div>
