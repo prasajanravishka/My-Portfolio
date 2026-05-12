@@ -34,8 +34,8 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background"></div>
+    <section id="projects" className="py-20 relative overflow-hidden border-b border-border/70">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/6 to-background"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -45,7 +45,7 @@ export function Projects() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Featured Projects</h2>
+          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl text-transparent">Featured Projects</h2>
           <p className="text-muted-foreground text-lg">
             Some of my recent work and personal projects
           </p>
@@ -60,8 +60,9 @@ export function Projects() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
-              className="p-8 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all group relative overflow-hidden"
+              className="p-8 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all group relative overflow-hidden"
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-accent opacity-70"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
               <div className="relative z-10">
@@ -72,7 +73,7 @@ export function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 hover:bg-primary hover:text-white rounded-xl transition-all hover:scale-110"
+                      className="p-2 hover:bg-primary hover:text-primary-foreground rounded-lg transition-all hover:scale-110"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -80,7 +81,7 @@ export function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 hover:bg-accent hover:text-white rounded-xl transition-all hover:scale-110"
+                      className="p-2 hover:bg-accent hover:text-accent-foreground rounded-lg transition-all hover:scale-110"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
@@ -93,7 +94,7 @@ export function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 text-sm bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-foreground rounded-full"
+                      className="px-3 py-1 text-sm bg-primary/10 border border-primary/25 text-foreground rounded-md"
                     >
                       {tag}
                     </span>

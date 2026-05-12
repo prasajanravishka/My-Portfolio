@@ -21,8 +21,8 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background"></div>
+    <section id="about" className="py-20 relative overflow-hidden border-b border-border/70">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/6 to-background"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -32,7 +32,7 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">About Me</h2>
+          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl text-transparent">About Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             I'm a passionate software engineer with over 5 years of experience building web applications.
             I love turning complex problems into simple, beautiful solutions.
@@ -48,10 +48,10 @@ export function About() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
-              className="p-8 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 transition-all group"
+              className="p-8 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all group"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary/30">
-                <feature.icon className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
+                <feature.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>

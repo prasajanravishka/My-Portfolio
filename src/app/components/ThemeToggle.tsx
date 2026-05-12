@@ -1,4 +1,4 @@
-import { Moon, Sun, Droplets, Zap } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import {
@@ -22,8 +22,6 @@ export function ThemeToggle() {
 
   const renderIcon = () => {
     if (theme === "light") return <Sun className="h-5 w-5" />;
-    if (theme === "ocean") return <Droplets className="h-5 w-5" />;
-    if (theme === "neon") return <Zap className="h-5 w-5" />;
     return <Moon className="h-5 w-5" />;
   };
 
@@ -43,14 +41,6 @@ export function ThemeToggle() {
         <DropdownMenuItem onClick={() => setTheme("dark")} className="cursor-pointer gap-2">
           <Moon className="h-4 w-4" />
           Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("ocean")} className="cursor-pointer gap-2">
-          <Droplets className="h-4 w-4" />
-          Ocean
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("neon")} className="cursor-pointer gap-2">
-          <Zap className="h-4 w-4" />
-          Neon
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -55,7 +55,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/6 to-background"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -65,7 +65,7 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Get In Touch</h2>
+          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl text-transparent">Get In Touch</h2>
           <p className="text-muted-foreground text-lg">
             Have a question or want to work together? I'd love to hear from you!
           </p>
@@ -83,10 +83,10 @@ export function Contact() {
             <div className="space-y-6">
               <motion.div
                 whileHover={{ x: 4 }}
-                className="flex items-start gap-4 p-4 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all"
+                className="flex items-start gap-4 p-4 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 transition-all"
               >
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/30">
-                  <Mail className="w-6 h-6 text-white" />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/20">
+                  <Mail className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="mb-1">Email</h4>
@@ -96,10 +96,10 @@ export function Contact() {
 
               <motion.div
                 whileHover={{ x: 4 }}
-                className="flex items-start gap-4 p-4 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all"
+                className="flex items-start gap-4 p-4 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 transition-all"
               >
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/30">
-                  <Phone className="w-6 h-6 text-white" />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/20">
+                  <Phone className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="mb-1">Phone</h4>
@@ -109,10 +109,10 @@ export function Contact() {
 
               <motion.div
                 whileHover={{ x: 4 }}
-                className="flex items-start gap-4 p-4 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 transition-all"
+                className="flex items-start gap-4 p-4 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 transition-all"
               >
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/30">
-                  <MapPin className="w-6 h-6 text-white" />
+                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/20">
+                  <MapPin className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <h4 className="mb-1">Location</h4>
@@ -139,7 +139,7 @@ export function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-card/60 backdrop-blur-sm border border-primary/20 focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/20 transition-all"
+                className="w-full px-4 py-3 rounded-lg bg-card/80 backdrop-blur-sm border border-border focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/15 transition-all"
               />
             </div>
 
@@ -152,7 +152,7 @@ export function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-card/60 backdrop-blur-sm border border-primary/20 focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/20 transition-all"
+                className="w-full px-4 py-3 rounded-lg bg-card/80 backdrop-blur-sm border border-border focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/15 transition-all"
               />
             </div>
 
@@ -165,7 +165,7 @@ export function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-3 rounded-xl bg-card/60 backdrop-blur-sm border border-primary/20 focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/20 transition-all resize-none"
+                className="w-full px-4 py-3 rounded-lg bg-card/80 backdrop-blur-sm border border-border focus:outline-none focus:border-primary focus:shadow-lg focus:shadow-primary/15 transition-all resize-none"
               ></textarea>
             </div>
 
@@ -174,7 +174,7 @@ export function Contact() {
               disabled={isSubmitting}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-xl hover:shadow-2xl hover:shadow-primary/40 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:shadow-2xl hover:shadow-primary/25 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
             </motion.button>

@@ -23,7 +23,7 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 border-b border-border/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export function Experience() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Work Experience</h2>
+          <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl text-transparent">Work Experience</h2>
           <p className="text-muted-foreground text-lg">
             My professional journey and career milestones
           </p>
@@ -52,7 +52,7 @@ export function Experience() {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: index * 0.2 + 0.3 }}
-                className="absolute left-0 top-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/50 border-4 border-background"
+                className="absolute left-0 top-0 w-6 h-6 rounded-md bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/30 border-4 border-background"
               ></motion.div>
               {index !== experiences.length - 1 && (
                 <div className="absolute left-[11px] top-6 bottom-0 w-[2px] bg-gradient-to-b from-primary/50 to-accent/50"></div>
@@ -60,7 +60,7 @@ export function Experience() {
 
               <motion.div
                 whileHover={{ x: 4 }}
-                className="p-8 rounded-2xl bg-card/60 backdrop-blur-sm border border-primary/20 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all"
+                className="p-8 rounded-lg bg-card/80 backdrop-blur-sm border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all"
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                   <h3>{exp.title}</h3>
