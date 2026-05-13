@@ -1,20 +1,74 @@
 import { motion } from "motion/react";
 
 export function Skills() {
-  const skillCategories = [
-    {
-      category: "Frontend",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js", "HTML/CSS"]
-    },
-    {
-      category: "Backend",
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL"]
-    },
-    {
-      category: "Tools & Others",
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Jest", "Figma"]
-    }
-  ];
+      const skillCategories = [
+        {
+          category: "Frontend",
+          skills: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "Bootstrap",
+            "Responsive Design"
+          ]
+        },
+        {
+          category: "Backend",
+          skills: [
+            "Node.js",
+            "Express.js",
+            "PHP",
+            "REST APIs",
+            "Authentication Systems",
+            "API Integration"
+          ]
+        },
+        {
+          category: "Mobile Development",
+          skills: [
+            "Flutter",
+            "Dart",
+            "React Native",
+            "Cross-platform App Development",
+            "Mobile UI Design"
+          ]
+        },
+        {
+          category: "Database",
+          skills: [
+            "MySQL",
+            "MongoDB",
+            "SQLite",
+            "Firebase"
+          ]
+        },
+        {
+          category: "Tools & Technologies",
+          skills: [
+            "Git",
+            "GitHub",
+            "npm",
+            "Visual Studio Code",
+            "Figma",
+            "Postman"
+          ]
+        },
+        {
+          category: "Soft Skills",
+          skills: [
+            "Problem Solving","Critical Thinking","Creativity",
+            "Team Collaboration","Quick Learning",
+            "Communication","Adaptability",
+            "Time Management",
+            
+          ]
+        }
+      ];
+
 
   return (
     <section id="skills" className="py-20 border-b border-border/70">

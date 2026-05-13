@@ -34,8 +34,11 @@ export function About() {
         >
           <h2 className="mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-4xl text-transparent">About Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I'm a passionate software engineer with over 5 years of experience building web applications.
-            I love turning complex problems into simple, beautiful solutions.
+            Forward-thinking Full Stack Developer with a solid foundation in computing, mathematical modeling, and information systems.
+             I am passionate about bridging traditional web development with cutting-edge AI, bringing hands-on experience in Python, 
+             computer vision, and large language model integrations. From architecting efficient backend logic to building automated,
+              data-driven solutions, I specialize in transforming complex engineering challenges into elegant software. I am eager to 
+              drive impactful innovation and deliver seamless user experiences within a collaborative team
           </p>
         </motion.div>
 

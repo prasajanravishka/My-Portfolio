@@ -38,9 +38,12 @@ export function Hero() {
               <div className="relative mx-auto flex h-full max-w-[21rem] items-end justify-center">
                 <div className="absolute bottom-0 h-72 w-72 rounded-[46%_54%_48%_52%/58%_42%_58%_42%] bg-gradient-to-br from-primary/25 via-card to-accent/20 shadow-2xl shadow-primary/10"></div>
                 <div className="relative mb-6 h-64 w-64 overflow-hidden rounded-[48%_52%_45%_55%/58%_44%_56%_42%] bg-gradient-to-br from-muted via-background to-primary/15 shadow-xl shadow-primary/10">
-                  <div className="absolute inset-x-10 top-10 h-24 rounded-full bg-primary/20"></div>
-                  <div className="absolute bottom-0 left-1/2 h-36 w-44 -translate-x-1/2 rounded-t-full bg-accent/20"></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-white/10"></div>
+                  <img
+                    src="/profile.svg"
+                    alt="Prasajan Ravishka"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-white/10"></div>
                 </div>
               </div>
             </div>
@@ -53,8 +56,8 @@ export function Hero() {
               transition={{ delay: 0.4 }}
             >
               <p className="text-accent mb-2 tracking-[0.24em] uppercase text-sm">Hello, I'm</p>
-              <h1 className="mb-4 bg-gradient-to-r from-primary via-foreground to-accent bg-clip-text text-5xl text-transparent sm:text-6xl">John Developer</h1>
-              <h2 className="text-muted-foreground mb-6 text-xl">Full Stack Software Engineer</h2>
+              <h1 className="mb-4 bg-gradient-to-r from-primary via-foreground to-accent bg-clip-text text-5xl text-transparent sm:text-6xl">Prasajan Ravishka</h1>
+              <h2 className="text-muted-foreground mb-6 text-xl">Undergraduate Student</h2>
             </motion.div>
 
             <motion.p
@@ -63,8 +66,10 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="text-foreground/80 max-w-2xl mx-auto mb-8 text-lg lg:mx-0"
             >
-              I build exceptional digital experiences that combine elegant code with intuitive design.
-              Passionate about creating scalable solutions and learning new technologies.
+             Full Stack Software Engineer specializing in Python, AI integrations, 
+             and end-to-end web development. Passionate about leveraging strong algorithms
+              and modern frameworks to build innovative, high-quality software that solves 
+              real-world problems
             </motion.p>
 
             <motion.div
