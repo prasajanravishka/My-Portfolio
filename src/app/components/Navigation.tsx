@@ -34,6 +34,9 @@ export function Navigation() {
               <button onClick={() => scrollToSection("experience")} className="px-4 py-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-primary/15 transition-all">
                 Experience
               </button>
+              <button onClick={() => scrollToSection("education")} className="px-4 py-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-primary/15 transition-all">
+                Education
+              </button>
               <button onClick={() => scrollToSection("contact")} className="px-4 py-2 rounded-md text-foreground/70 hover:text-foreground hover:bg-primary/15 transition-all">
                 Contact
               </button>
