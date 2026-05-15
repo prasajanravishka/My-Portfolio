@@ -2,23 +2,12 @@ import { motion } from "motion/react";
 
 export function Experience() {
   const experiences = [
+
     {
-      title: "Senior Software Engineer",
-      company: "Tech Corp",
-      period: "2023 - Present",
-      description: "Lead development of customer-facing features, mentor junior developers, and architect scalable solutions."
-    },
-    {
-      title: "Software Engineer",
-      company: "Startup Inc",
-      period: "2021 - 2023",
-      description: "Built and maintained full-stack web applications, implemented CI/CD pipelines, and improved application performance."
-    },
-    {
-      title: "Junior Developer",
-      company: "Digital Agency",
-      period: "2020 - 2021",
-      description: "Developed responsive websites and web applications for various clients using modern web technologies."
+      title: "Intern Full Stack Developer",
+      company: "Codezela",
+      period: "2026 April - Present",
+      description: " Contributing to the development of a cutting-edge AI-powered code generation platform. Collaborating with a team of engineers to design and implement features that enhance code quality and developer productivity. Gaining hands-on experience in full stack development, AI integration, and software architecture within an innovative startup environment."
     }
   ];
 

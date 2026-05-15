@@ -3,16 +3,16 @@ import { motion } from "motion/react";
 export function Education() {
   const educations = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Tech University",
-      period: "2019 - 2021",
-      description: "Specialized in Artificial Intelligence and Machine Learning. Completed a thesis on neural network optimization."
+      degree: " B.Sc. (Joint Major) Undergraduate in Computing & Information Systems with Mathematics, Mathematical Modeling, and Statistics  ",
+      institution: "Wayamba University of Sri Lanka",
+      period: "2022 - Present",
+      description: "Comprehensive studies in computing, mathematical modeling, and information systems. Developed strong analytical and problem-solving skills through coursework and projects."
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "State College",
-      period: "2015 - 2019",
-      description: "Core studies in algorithms, data structures, and web development. Active member of the coding club."
+      degree: " G.C.E Advance Level in Physical Science  ",
+      institution: " Ananda College-National School, Dewalapola ",
+      period: "2011 - 2020",
+      description: "Chemistry-B Combined Math-C Physics-C. Passed with 3 credits. Developed a strong foundation in physical sciences and mathematics, fostering critical thinking and analytical skills."
     }
   ];
 

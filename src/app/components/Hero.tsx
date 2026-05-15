@@ -2,8 +2,13 @@ import { motion } from "motion/react";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export function Hero() {
-  const scrollToAbout = () => {
-    const element = document.getElementById("about");
+  const scrollToProjects = () => {
+    const element = document.getElementById("projects");
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -108,10 +113,10 @@ export function Hero() {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <button onClick={scrollToAbout} className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/25 transition-all hover:scale-105">
+              <button onClick={scrollToProjects} className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:shadow-lg hover:shadow-primary/25 transition-all hover:scale-105">
                 View My Work
               </button>
-              <button onClick={() => window.open("mailto:hello@example.com")} className="px-8 py-4 bg-card/80 backdrop-blur-sm border border-primary/40 rounded-lg hover:bg-primary hover:text-primary-foreground hover:shadow-lg hover:shadow-primary/25 transition-all hover:scale-105">
+              <button onClick={scrollToContact} className="px-8 py-4 bg-card/80 backdrop-blur-sm border border-primary/40 rounded-lg hover:bg-primary hover:text-primary-foreground hover:shadow-lg hover:shadow-primary/25 transition-all hover:scale-105">
                 Contact Me
               </button>
             </motion.div>
