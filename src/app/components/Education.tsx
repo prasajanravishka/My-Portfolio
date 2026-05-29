@@ -9,11 +9,18 @@ export function Education() {
       description: "Comprehensive studies in computing, mathematical modeling, and information systems. Developed strong analytical and problem-solving skills through coursework and projects."
     },
     {
+      degree: " Certificate course in Industrial Engineering  ",
+      institution: " Apex Institute of Management Services  ",
+      period: "2024 - 2025",
+      description: "Completed a comprehensive certificate course in Industrial Engineering, gaining practical skills and knowledge in optimizing complex processes and systems. The course covered topics such as operations management, supply chain optimization, and quality control, equipping me with the tools to improve efficiency and productivity in various industries."
+    },    
+    {
       degree: " G.C.E Advance Level in Physical Science  ",
       institution: " Ananda College-National School, Dewalapola ",
       period: "2011 - 2020",
       description: "Chemistry-B Combined Math-C Physics-C. Passed with 3 credits. Developed a strong foundation in physical sciences and mathematics, fostering critical thinking and analytical skills."
     }
+
   ];
 
   return (

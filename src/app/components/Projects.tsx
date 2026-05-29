@@ -3,6 +3,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 export function Projects() {
   const projects = [
+        {
+      title: "Smrt Library Management System with Image Processing Mobile App(Ongoing)",
+      description: "A mobile application for library management that incorporates image processing to automate book check-ins and check-outs. The app allows users to scan book covers for quick transactions, manage their library accounts, and receive notifications for due dates. The backend is built with Node.js and PostgreSQL, while the frontend is developed using React Native.",
+      tags: ["React Native", "Node.js", "PostgreSQL", "Image Processing"],
+      github: "https://github.com",
+      demo: "https://example.com"
+    },
     {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution with cart management, payment integration, and admin dashboard.",
@@ -11,16 +18,23 @@ export function Projects() {
       demo: "https://example.com"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team collaboration features.",
-      tags: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
+      title: "Event Management Application",
+      description: "A comprehensive event management solution with registration, scheduling, and attendee management.",
+      tags: ["Html", "php", "My SQL", "CSS"],
       github: "https://github.com",
       demo: "https://example.com"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather tracking application with interactive maps and detailed forecasts.",
+      title: "Job Board Dashboard",
+      description: "A job board dashboard for job seekers to track applications, manage resumes, and receive job recommendations.",
       tags: ["React", "Tailwind CSS", "OpenWeather API"],
+      github: "https://github.com",
+      demo: "https://example.com"
+    },
+        {
+      title: "Aroma Dry IoT Project",
+      description: " An IoT-based aroma diffuser that allows users to control scent intensity, schedule diffusion times, and monitor usage through a mobile app. The project integrates sensors for real-time feedback and uses a cloud platform for data storage and remote access.",
+      tags: ["Html", "php", "Firebase", "CSS", "IoT"],
       github: "https://github.com",
       demo: "https://example.com"
     },

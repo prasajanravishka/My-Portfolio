@@ -5,7 +5,7 @@ export function Experience() {
 
     {
       title: "Intern Full Stack Developer",
-      company: "Codezela",
+      company: "CodeZela",
       period: "2026 April - Present",
       description: " Contributing to the development of a cutting-edge AI-powered code generation platform. Collaborating with a team of engineers to design and implement features that enhance code quality and developer productivity. Gaining hands-on experience in full stack development, AI integration, and software architecture within an innovative startup environment."
     }
